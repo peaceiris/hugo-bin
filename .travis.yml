@@ -13,6 +13,7 @@ deploy:
     node: "8"
 cache:
   directories:
-    - node_modules
+    - "$HOME/.npm"
+    - node_modules # remove this when Node.js 6 is removed, thus we have npm >= 6
 notifications:
   email: false
